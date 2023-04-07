@@ -1,0 +1,27 @@
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+
+  width: 130px;
+  height: 33px;
+}
+
+.toggle-button.react-toggle--checked .react-toggle-track {
+  background-color: #047857;
+}
+
+.toggle-text {
+  width: 53px;
+  height: 33px;
+
+  font-family: ".SF Compact Rounded";
+  font-style: normal;
+  font-weight: 436;
+  font-size: 15px;
+  line-height: 16px;
+  /* or 104% */
+
+  color: #047857;
+}

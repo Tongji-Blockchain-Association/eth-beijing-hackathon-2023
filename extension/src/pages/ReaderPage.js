@@ -6,12 +6,17 @@ import News from "../components/News";
 import Top from "../components/Top";
 import NewsScore from "../components/NewsScore";
 import BottomInfo from "../components/BottomInfo";
-import Connect from "../components/Connect";
+import ConnectButton from "../components/ConnectButton";
+import ToggleButton from "../components/ToggleButton";
 import TableRow from "../components/TableRow";
 
 function ReaderPage() {
   return (
     <div id="container">
+      <div className="container-control">
+        <ConnectButton />
+        <ToggleButton />
+      </div>
       <Top />
       {/* <Top />
       <div className={styles.splitContainer}>

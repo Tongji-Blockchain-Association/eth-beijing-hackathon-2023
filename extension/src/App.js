@@ -1,7 +1,7 @@
 /*global chrome*/
 
 import React, { Component, useEffect } from "react";
-import { WalletProvider, useWallet } from "./context/WalletProvider";
+import { WalletProvider } from "./context/WalletProvider";
 
 import ReaderPage from "./pages/ReaderPage";
 
@@ -9,11 +9,6 @@ import logo from "./logo.svg";
 import "./App.css";
 
 const App = ({ isExt }) => {
-  const { isAuthenticated, connectWallet, disconnectWallet, account } =
-    useWallet();
-
-  console.log({ isAuthenticated, account });
-
   return (
     <ReaderPage />
     // <div className="App">
