@@ -1,27 +1,34 @@
 /*global chrome*/
 
-import React, { Component } from 'react';
-import { useMetaMask } from 'metamask-react';
-import { MetaMaskProvider } from 'metamask-react';
+import React, { Component, useEffect } from "react";
+import { useMetaMask } from "metamask-react";
+import { MetaMaskProvider } from "metamask-react";
+import { WalletProvider, useWallet } from "./context/WalletProvider";
 
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 const App = ({ isExt }) => {
-  const { status, connect, account, chainId, ethereum } = useMetaMask();
+  const { isAuthenticated, connectWallet, disconnectWallet, account } =
+    useWallet();
+
+  console.log({ isAuthenticated, account });
 
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">FactLens DAO</h1>
-        <h1 className="App-title">{status}</h1>
+        <h1 className="App-title">{isAuthenticated ? account : ""}</h1>
       </header>
       <p className="App-intro">
         To get started11, edit <code>src/App.js</code> and save to reload.
       </p>
       <div>
-        <button onClick={connect}>
-          <div>Connect</div>
+        <button
+          onClick={isAuthenticated ? disconnectWallet : connectWallet}
+          id="wallet-connect"
+        >
+          {isAuthenticated ? "Disconnect Wallet" : "Connect Wallet"}
         </button>
       </div>
     </div>
@@ -30,9 +37,9 @@ const App = ({ isExt }) => {
 
 const MetaMaskApp = () => {
   return (
-    <MetaMaskProvider>
+    <WalletProvider>
       <App />
-    </MetaMaskProvider>
+    </WalletProvider>
   );
 };
 

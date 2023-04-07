@@ -11,6 +11,7 @@
     "dotenv": "^8.2.0",
     "dotenv-expand": "^5.1.0",
     "fs-extra": "^9.0.1",
+    "metamask-extension-provider": "^3.0.0",
     "metamask-react": "^2.6.0",
     "postcss-flexbugs-fixes": "^4.2.1",
     "promise": "8.0.1",
@@ -20,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-frame-component": "^4.1.2",
     "resolve": "^1.17.0",
+    "web3": "^1.9.0",
     "whatwg-fetch": "3.2.0"
   },
   "scripts": {
@@ -95,6 +97,7 @@
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.4.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "^4.0.2",
@@ -119,5 +122,10 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "^2.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
