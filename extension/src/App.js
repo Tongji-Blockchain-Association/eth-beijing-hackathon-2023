@@ -3,38 +3,14 @@
 import React, { Component, useEffect } from "react";
 import { WalletProvider } from "./context/WalletProvider";
 
-import ReaderPage from "./pages/ReaderPage";
+import ExtensionPage from "./pages/ExtensionPage";
 
-import logo from "./logo.svg";
 import "./App.css";
 
-const App = ({ isExt }) => {
-  return (
-    <ReaderPage />
-    // <div className="App">
-    //   <header className="App-header">
-    //     <h1 className="App-title">FactLens DAO</h1>
-    //     <h1 className="App-title">{isAuthenticated ? account : ""}</h1>
-    //   </header>
-    //   <p className="App-intro">
-    //     To get started11, edit <code>src/App.js</code> and save to reload.
-    //   </p>
-    //   <div>
-    //     <button
-    //       onClick={isAuthenticated ? disconnectWallet : connectWallet}
-    //       id="wallet-connect"
-    //     >
-    //       {isAuthenticated ? "Disconnect Wallet" : "Connect Wallet"}
-    //     </button>
-    //   </div>
-    // </div>
-  );
-};
-
-const MetaMaskApp = () => {
+const MetaMaskApp = ({ isExt }) => {
   return (
     <WalletProvider>
-      <App />
+      <ExtensionPage isExt={isExt} />
     </WalletProvider>
   );
 };

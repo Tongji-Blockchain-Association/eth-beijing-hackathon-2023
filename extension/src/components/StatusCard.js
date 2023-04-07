@@ -1,15 +1,18 @@
+/*global chrome*/
 import React from "react";
 import "./StatusCard.css";
 
 import fact_image from "../images/fact.png";
-import voting_image from "../images/voting.png";
+import voting_image from "../images/vote.png";
 import fake_image from "../images/fake.png";
 
-const StatusCard = ({ status = "voting", X = 124, Y = 37 }) => {
+const StatusCard = ({ status, X = 124, Y = 37, isExt }) => {
   let icon_path = {
-    voting: voting_image,
-    fact: fact_image,
-    fake: fake_image,
+    voting: isExt
+      ? chrome.runtime.getURL("static/media/vote.png")
+      : voting_image,
+    fact: isExt ? chrome.runtime.getURL("static/media/fact.png") : fact_image,
+    fake: isExt ? chrome.runtime.getURL("static/media/fake.png") : fake_image,
   };
 
   let status_text = {

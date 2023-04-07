@@ -21,14 +21,16 @@ let shape_cross = (
   </svg>
 );
 
-const Header = () => {
+const Header = ({ setExpand }) => {
   return (
     <div className="factlens-row header-container">
       <div className="factlens-row">
         <p className="header-text header-text-white">FACT</p>
         <p className="header-text">LENS</p>
       </div>
-      <div className="header-cross">{shape_cross}</div>
+      <div className="header-cross" onClick={() => setExpand(false)}>
+        {shape_cross}
+      </div>
     </div>
   );
 };

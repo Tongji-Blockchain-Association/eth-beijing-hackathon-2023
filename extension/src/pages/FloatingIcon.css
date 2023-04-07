@@ -1,0 +1,11 @@
+.floating-image {
+  width: 73px;
+  height: 73px;
+  
+  margin-TOP: 100px;
+  margin-left: 19px;
+}
+
+.floating-image:hover {
+  cursor: pointer;
+}
