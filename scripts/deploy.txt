@@ -1,0 +1,16 @@
+这段代码是一个 Hardhat 脚本，用于在 Ethereum 区块链上部署智能合约。
+
+首先，它引入了 Node.js 中的 path 模块，并定义了一个异步函数 main()。函数中使用了一个 Hardhat 的全局变量 network 来判断当前网络是否为 Hardhat
+网络，并在控制台打印相关提示。
+
+接着，通过 ethers.getSigners() 获取部署账户的签名者，即 deployer。然后打印出部署账户的地址和余额。
+
+接下来，使用 ethers.getContractFactory() 方法获取合约工厂对象，再调用 Token.deploy() 方法部署合约，并使用 await 等待部署完成。最后，打印合
+约地址。
+
+最后，调用 saveFrontendFiles() 方法保存合约的地址和 ABI 文件到前端代码目录中的 contracts 文件夹下。这样，前端代码就可以引用智能合约的地址
+和 ABI 文件，与智能合约进行交互。
+
+saveFrontendFiles() 函数中，通过 path.join() 方法定义了保存合约地址和 ABI 文件的目录，如果目录不存在，则创建该目录。然后，使用 
+fs.writeFileSync() 方法将智能合约地址和 ABI 文件保存到指定的文件中。保存的合约地址和 ABI 文件可以在前端代码中使用，通过调用
+ethers.Contract() 方法来创建与智能合约交互的对象。

@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+  min-width: 364px;
+  max-width: 364px;
+  min-height: 380px;
+  max-height: 800px;
+}
+
+.split-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  padding: 5%;
+}
+
+.spacer {
+  width: 5%;
+}
+
+/* styles.css */
+.wireframe {
+  display: inline-flex; /* Change this to inline-flex */
+  align-items: center; /* Add this line to align the content vertically */
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px; /* Add border-radius */
+  height: 100%; /* Add this line to make the wireframe height equal to the tallest element */
+  display: block;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  padding: 5px;
+  align-items: stretch; /* Add this line to make the child elements stretch to the tallest element */
+}
+
+.wireframe-container {
+  display: flex;
+}
+
+.wireframe-container:first-child {
+  width: calc((100% - 5px) * 1 / 1.5);
+  /* Set the width of the left frame to 2/3 of the available space */
+}
+
+.wireframe-container:last-child {
+  width: calc((100% - 5px) / 30px);
+  /* Set the width of the right frame to 1/3 of the available space */
+}
