@@ -1,0 +1,44 @@
+.newsScore {
+    padding: 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top {
+    /* padding: 2.5px 0; */
+    display: flex; /* Add display flex */
+    align-items: center; /* Add align-items center to vertically align the elements */
+    background-color: #282c34;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ellipse13 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px; /* Add margin-right to create space between the img and text elements */
+}
+
+.heading {
+    display: flex;
+    flex-direction: column; /* Add flex-direction column to stack subtitle and paragraph vertically */
+}
+
+.subtitle {
+    color: #047857;
+    font-family: 'SF Compact Rounded';
+    font-weight: bold;
+    font-size: 24px;
+    /* margin-left: 10px; Remove default margin */
+}
+
+.paragraph {
+    color: #047857;
+    font-family: 'SF Compact Rounded';
+    font-weight: 200;
+    font-size: 16px;
+    margin: 0; 
+    /* Remove default margin */
+}

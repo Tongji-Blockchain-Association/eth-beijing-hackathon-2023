@@ -1,0 +1,23 @@
+.fakeButton {
+    background-color: #95243F;
+    border-radius: 7px;
+    padding: 1.5px 30.5px 4.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+.layout {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    color: #fff;
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 40px;
+}
