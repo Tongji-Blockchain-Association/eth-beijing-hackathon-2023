@@ -9,17 +9,27 @@ import ToggleButton from "../components/ToggleButton";
 import BottomLink from "../components/BottomLink";
 
 function ReaderPage() {
+  const [isValidator, setIsValidator] = React.useState(false);
+
   return (
     <div id="container">
       <Header />
       <div className="container-control">
         <ConnectButton />
-        <ToggleButton />
+        <ToggleButton
+          isValidator={isValidator}
+          setIsValidator={setIsValidator}
+        />
       </div>
-      <div className="container-status row">
-        <StatusCard />
-        <MediaCard />
-      </div>
+      {isValidator ? (
+        ""
+      ) : (
+        <div className="container-status row">
+          <StatusCard />
+          <MediaCard />
+        </div>
+      )}
+
       <BottomLink />
       {/* <Top />
       <div className={styles.splitContainer}>
