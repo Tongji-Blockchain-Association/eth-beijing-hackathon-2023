@@ -5,6 +5,7 @@ import Answer from "../components/Answer";
 import News from "../components/StatusCard";
 import Top from "../components/Top";
 import StatusCard from "../components/StatusCard";
+import MediaCard from "../components/MediaCard"
 import ConnectButton from "../components/ConnectButton";
 import ToggleButton from "../components/ToggleButton";
 import BottomLink from "../components/BottomLink";
@@ -16,8 +17,9 @@ function ReaderPage() {
         <ConnectButton />
         <ToggleButton />
       </div>
-      <div className="container-status">
+      <div className="container-status row">
         <StatusCard />
+        <MediaCard />
       </div>
       <BottomLink />
       <Top />

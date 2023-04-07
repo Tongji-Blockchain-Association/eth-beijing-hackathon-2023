@@ -1,0 +1,54 @@
+.media-image {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+.media-frame {
+  box-sizing: border-box;
+
+  width: 116px;
+  height: 96px;
+
+  background: #25272a;
+  border: 1px solid #747b8d;
+  border-radius: 5px;
+
+  padding: 5px;
+
+  margin-left: 10px;
+}
+
+.media-textbox {
+  width: 45px;
+  height: 77px;
+  margin-left: 8px;
+}
+
+.media-title {
+  font-family: ".SF Compact Rounded";
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 16px;
+  /* identical to box height, or 78% */
+
+  /* Success/Green 700 */
+  margin-top: 19px;
+  margin-bottom: 4px;
+
+  color: #047857;
+}
+
+.media-text {
+  font-family: ".SF Compact Rounded";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #047857;
+
+  width: fit-content;
+}

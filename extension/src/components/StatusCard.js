@@ -31,7 +31,7 @@ const StatusCard = ({ status = "voting", X = 124, Y = 37 }) => {
         <div className={"status-title " + status_color_class[status]}>
           {status_text[status]}
         </div>
-        <div className={styles.paragraph}>
+        <div>
           <strong className="status-text status-color-fact">{X}</strong>
           <strong className="status-text">{" voted for "}</strong>
           <strong className="status-text status-color-fact">FACT</strong>
