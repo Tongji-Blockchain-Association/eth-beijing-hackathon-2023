@@ -5,11 +5,20 @@ let capitalizeFirstLetter = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
-const MediaCard = ({ url = "https://news.sina.com.cn/", score = "4.9" }) => {
-  let media_icon_path = url + "/favicon.ico";
+const MediaCard = ({ score = "4.9" }) => {
+  let url = window.location.hostname;
 
-  let pattern = /(?:[^.]+\.)?([^.\n]+)\.com/;
-  let media_name = capitalizeFirstLetter(url.match(pattern)[1]);
+  console.log(url);
+  let media_icon_path = "/favicon.ico";
+
+  let pattern = /(?:[^.]+\.)?([^.\n]+)\.(com|cn|net|org)/;
+
+  let media_name;
+  if (url.match(pattern)?.[1])
+    media_name = capitalizeFirstLetter(url.match(pattern)[1]);
+  else media_name = "Media";
+
+  media_name = media_name.substr(0, 4);
 
   return (
     <div className="media-frame factlens-row">

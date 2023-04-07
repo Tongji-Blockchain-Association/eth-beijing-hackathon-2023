@@ -7,6 +7,7 @@ import voting_image from "../images/vote.png";
 import fake_image from "../images/fake.png";
 
 const StatusCard = ({ status, X = 124, Y = 37, isExt }) => {
+
   let icon_path = {
     voting: isExt
       ? chrome.runtime.getURL("static/media/vote.png")
