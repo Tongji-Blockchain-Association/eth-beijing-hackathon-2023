@@ -9,6 +9,7 @@ import BottomInfo from "../components/BottomInfo";
 import ConnectButton from "../components/ConnectButton";
 import ToggleButton from "../components/ToggleButton";
 import TableRow from "../components/TableRow";
+import BottomLink from "../components/BottomLink";
 
 function ReaderPage() {
   return (
@@ -17,7 +18,8 @@ function ReaderPage() {
         <ConnectButton />
         <ToggleButton />
       </div>
-      <Top />
+      {/* <Top /> */}
+      <BottomLink />
       {/* <Top />
       <div className={styles.splitContainer}>
         <Connect />
