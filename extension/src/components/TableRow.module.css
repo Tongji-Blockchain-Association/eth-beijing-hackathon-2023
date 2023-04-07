@@ -1,0 +1,49 @@
+.tableRow {
+    /* background-color: #31463c; */
+    padding: 0 0 11px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content {
+    padding: 0 16px 0 0;
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.subtitle {
+    max-width: 53px;
+    color: #047857;
+    margin-right: 8px;
+    font-family: 'SF Compact Rounded';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.rightContent {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.switch {
+    background-size: 100% 100%;
+    background-position: center;
+    background-image: url("https://static.overlay-tech.com/assets/5063962f-1e1b-4473-937a-cab129f4549a.svg");
+    padding: 2px 2px 2px 22px;
+    display: flex;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+}
+
+.knob {
+    width: 27px;
+    height: 27px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px 0 rgb(0, 0, 0),
+        0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}

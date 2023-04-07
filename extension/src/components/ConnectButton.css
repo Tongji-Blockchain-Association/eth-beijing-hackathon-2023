@@ -1,0 +1,49 @@
+.connect-button {
+  background-color: #047857;
+  padding: 5.5px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  height: 33px;
+  margin-top: 0px;
+
+  display: flex;
+}
+
+.connect-button:hover {
+    cursor: pointer;
+}
+
+.connect-icon {
+  margin-right: 4px;
+  padding: 5px 2.5px 4.17px;
+  display: flex;
+  align-items: center;
+  width: 15px;
+}
+
+/* .shape {
+  flex: 1;
+  align-self: stretch;
+  object-fit: cover;
+} */
+
+.layout {
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+}
+
+.connect-label {
+  color: #fff;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  width: 116px;
+}

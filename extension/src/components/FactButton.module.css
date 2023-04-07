@@ -1,0 +1,22 @@
+.factButton {
+    background-color: #047857;
+    border-radius: 7px;
+    padding: 1.5px 28px 4.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    color: #fff;
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 40px;
+}
