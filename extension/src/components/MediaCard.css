@@ -2,12 +2,14 @@
   width: 50px;
   height: 50px;
   background-color: white;
+
+  margin-left: 6px;
 }
 
 .media-frame {
   box-sizing: border-box;
 
-  width: 116px;
+  width: 125px;
   height: 96px;
 
   background: #25272a;

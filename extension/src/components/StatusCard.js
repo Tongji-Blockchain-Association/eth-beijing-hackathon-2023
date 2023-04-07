@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./StatusCard.css";
+import "./StatusCard.css";
 
 import fact_image from "../images/fact.png";
 import voting_image from "../images/voting.png";
