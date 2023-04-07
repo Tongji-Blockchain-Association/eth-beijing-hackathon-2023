@@ -15,6 +15,10 @@ body {
   z-index: 9999;
 }
 
+#my-extension-root div {
+  line-height: 1 !important;
+}
+
 /* 
 #my-extension-root iframe {
   width: 100%;

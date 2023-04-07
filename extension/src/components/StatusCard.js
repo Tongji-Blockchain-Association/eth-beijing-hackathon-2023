@@ -25,7 +25,7 @@ const StatusCard = ({ status = "voting", X = 124, Y = 37 }) => {
   };
 
   return (
-    <div className="status-frame row">
+    <div className="status-frame factlens-row">
       <img
         className="circular-square status-image"
         src={icon_path[status]}

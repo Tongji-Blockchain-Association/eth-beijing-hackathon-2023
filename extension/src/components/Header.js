@@ -23,8 +23,8 @@ let shape_cross = (
 
 const Header = () => {
   return (
-    <div className="row header-container">
-      <div className="row">
+    <div className="factlens-row header-container">
+      <div className="factlens-row">
         <p className="header-text header-text-white">FACT</p>
         <p className="header-text">LENS</p>
       </div>

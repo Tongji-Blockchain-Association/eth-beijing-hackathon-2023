@@ -40,13 +40,13 @@
   border-radius: 50%;
 }
 
-.row {
+.factlens-row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.col {
+.factlens-col {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,4 +66,12 @@
 
 body {
   background: none transparent;
+}
+
+p {
+  margin: 0px !important;
+}
+
+*,:after,:before {
+    box-sizing: border-box;
 }

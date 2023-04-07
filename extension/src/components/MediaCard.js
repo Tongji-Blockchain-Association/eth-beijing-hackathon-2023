@@ -12,7 +12,7 @@ const MediaCard = ({ url = "https://news.sina.com.cn/", score = "4.9" }) => {
   let media_name = capitalizeFirstLetter(url.match(pattern)[1]);
 
   return (
-    <div className="media-frame row">
+    <div className="media-frame factlens-row">
       <img
         className="circular-square media-image"
         src={media_icon_path}

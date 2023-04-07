@@ -24,7 +24,7 @@ function ReaderPage() {
       {isValidator ? (
         ""
       ) : (
-        <div className="container-status row">
+        <div className="container-status factlens-row">
           <StatusCard />
           <MediaCard />
         </div>
