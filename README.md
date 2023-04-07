@@ -1,90 +1,61 @@
-# Hardhat Boilerplate
+# FactLENS-A Decentralized News Validation Ecosystem
 
-This repository contains a sample project that you can use as the starting point
-for your Ethereum project. It's also a great fit for learning the basics of
-smart contract development.
+# 1. Intruduction
 
-This project is intended to be used with the
-[Hardhat Beginners Tutorial](https://hardhat.org/tutorial), but you should be
-able to follow it by yourself by reading the README and exploring its
-`contracts`, `tests`, `scripts` and `frontend` directories.
+With the development of the Internet and social media, news is spreading at an unprecedented speed and scale. In such a context, fake news spreads rapidly, even its spread on social media exceeds the speed of real news, so how to solve the negative impact of fake news becomes an inevitable topic.
 
-## Quick start
+FactLENS is a decentralized news validation ecosystem,  which consists of FactLENS plugin and FactLENS website. Unlike some other decentralized news censorship projects (fact protocol), we focus more on making FactLENS accessible to most readers while using centralized social media, rather than forcing readers to join a whole new web3 platform (e.g. Block Quest for Fact protocol). 
 
-The first things you need to do are cloning this repository and installing its
-dependencies:
+# 2. Problem Definition
 
-```sh
-git clone https://github.com/NomicFoundation/hardhat-boilerplate.git
-cd hardhat-boilerplate
-npm install
-```
+The proliferation of fake news has had a significant negative impact on society. With the rapid spread of information through digital media, the power of regulatory bodies and self-governing organizations is limited. Unfortunately, fake news spreads more rapidly on Twitter than real news does, and people tend to find themselves in echo chambers that continue to spread inaccurate information. This has compromised public interest and created a crisis of trust between the media and the public.
 
-Once installed, let's run Hardhat's testing network:
+Fake news can mislead thousands of people and affect their daily lives. Incorrect medical advice can lead to health problems, and inaccurate political election information can lead to voters making the wrong decisions. The negative impact of fake news has led to panic and anxiety among people who find it challenging to believe any news or information they read.
 
-```sh
-npx hardhat node
-```
+To address the problem of rampant fake news, there are already some products that use the concept of web3.0. The Fact protocol uses a decentralized review method to publish verified messages on Dao or native platforms for users to browse. Block Quest ensures that the information published on their platform is accurate. However, these platforms have a high barrier to entry and can only serve a small group compared to the 4.9 billion social media users. They also have different usage habits from mainstream social media platforms, which can be a barrier to entry.
 
-Then, on a new terminal, go to the repository's root folder and run this to
-deploy your contract:
+# 3. Requirements
 
-```sh
-npx hardhat run scripts/deploy.js --network localhost
-```
+Based on the description of the problem above, in order to address the issue of rampant fake news and serve as many people as possible, the product needs to meet the following requirements:
 
-Finally, we can run the frontend with:
+1. It must be decentralized to prevent a single organization from dominating the evaluation of the authenticity of a news item.
+2. It must be transparent and traceable, with verification records that can be traced and viewed by anyone to ensure fairness.
+3. It must have an incentive policy to encourage people to verify the truthfulness of news and ensure sustainable operation. (Regardless of whether the news is true or false, as long as it is verified, there will be incentives. We encourage the behavior of verification.)
+4. It must be in line with the habits of most social media users. With over 4.5 billion global social media accounts, there is already a very rich ecosystem in place.
 
-```sh
-cd frontend
-npm install
-npm start
-```
+# 4. Concepts
 
-Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
-need to have [Metamask](https://metamask.io) installed and listening to
-`localhost 8545`.
+FactLENS is a decentralized news verification platform that offers transparency by providing publicly accessible validation records and results. The platform includes plugins that can be directly applied to popular media platforms and a website for validators to verify information from any website. Users can view news validation results without changing their browsing habits.
 
-## User Guide
+Thus FactLENS has several essential attributes, including: 
 
-You can find detailed instructions on using this repository and many tips in [its documentation](https://hardhat.org/tutorial).
+- **Transparence**: a reputation system that rates media credibility based on the quality of their historical news releases, and publicly transparent validation records and results.
+- **Decentralized and incentives**: anyone can be a validator, and validators receive tokens for finding reliable information and providing evidence.
+- **Censorship-resistance**
+- **Usability: U**sers do not need to change their browsing habits to use FactLENS, as they can see news credibility evaluations alongside the news they are browsing.
 
-- [Writing and compiling contracts](https://hardhat.org/tutorial/writing-and-compiling-contracts/)
-- [Setting up the environment](https://hardhat.org/tutorial/setting-up-the-environment/)
-- [Testing Contracts](https://hardhat.org/tutorial/testing-contracts/)
-- [Setting up Metamask](https://hardhat.org/tutorial/boilerplate-project#how-to-use-it)
-- [Hardhat's full documentation](https://hardhat.org/docs/)
+However, there are potential challenges, such as producing stable results for massive amounts of news without enough validators. To address this, validators are encouraged to prioritize news from high-traffic or popular social media platforms for validation.
 
-For a complete introduction to Hardhat, refer to [this guide](https://hardhat.org/getting-started/#overview).
+# 5. Affected Parties
 
-## What's Included?
+In the FactLENS ecosystem, there will be three main groups: Readers, Validators, and News Publishers.
 
-This repository uses our recommended hardhat setup, by using our [`@nomicfoundation/hardhat-toolbox`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-toolbox). When you use this plugin, you'll be able to:
+1. **Readers** can browse news on social media and receive evaluations of the news' authenticity to avoid the influence of fake or uncertain news. They can view the verification results of the news and the reputation score of the media that published it based on their history of news quality assessment, without changing their browsing habits.
 
-- Deploy and interact with your contracts using [ethers.js](https://docs.ethers.io/v5/) and the [`hardhat-ethers`](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-ethers) plugin.
-- Test your contracts with [Mocha](https://mochajs.org/), [Chai](https://chaijs.com/) and our own [Hardhat Chai Matchers](https://hardhat.org/hardhat-chai-matchers) plugin.
-- Interact with Hardhat Network with our [Hardhat Network Helpers](https://hardhat.org/hardhat-network-helpers).
-- Verify the source code of your contracts with the [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan) plugin.
-- Get metrics on the gas used by your contracts with the [hardhat-gas-reporter](https://github.com/cgewecke/hardhat-gas-reporter) plugin.
-- Measure your tests coverage with [solidity-coverage](https://github.com/sc-forks/solidity-coverage).
+2. **Validators**, who can be anyone, can earn incentives by verifying online information. Through their verification behavior towards news, they can gain rewards.
 
-This project also includes [a sample frontend/Dapp](./frontend), which uses [Create React App](https://github.com/facebook/create-react-app).
+3. **News Publishers**, including media organizations and individuals, will be constrained by the quality of their historical news releases, which will become their reputation score. This score will be shown to users to promote the dissemination of correct information. The news they publish will be verified for authenticity, and the overall quality of all their historical news will become their reputation. This will encourage them to publish truthful information.
 
-## Troubleshooting
+# 6. Next Steps
 
-- `Invalid nonce` errors: if you are seeing this error on the `npx hardhat node`
-  console, try resetting your Metamask account. This will reset the account's
-  transaction history and also the nonce. Open Metamask, click on your account
-  followed by `Settings > Advanced > Reset Account`.
+**1. Aggregation of news by event**
 
-## Setting up your editor
+To combat the spread of fake news, FactLENS aggregates news by event. This allows users to easily find the correct news related to a particular event after encountering false information. By providing a platform for users to access accurate news, FactLENS aims to promote informed decision-making and prevent the spread of misinformation.
 
-[Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode) is the official Hardhat extension that adds advanced support for Solidity to VSCode. If you use Visual Studio Code, give it a try!
+**2. News information publishing platform**
 
-## Getting help and updates
+As our user base grows, we plan to encourage users to directly publish news on FactLENS' portal website. By doing so, users can engage in discussions and vote on news stories, creating a more diverse and robust ecosystem. This will help to promote the stable development of our community.
 
-If you need help with this project, or with Hardhat in general, please read [this guide](https://hardhat.org/hardhat-runner/docs/guides/getting-help) to learn where and how to get it.
+**3. Community governance**
 
-For the latest news about Hardhat, [follow us on Twitter](https://twitter.com/HardhatHQ), and don't forget to star [our GitHub repository](https://github.com/NomicFoundation/hardhat)!
-
-**Happy _building_!**
+To incentivize users to verify news stories, we plan to offer different rewards for different levels of verification difficulty. We believe that community members should have the right to self-governance, ensuring that incentive policies are fair and reasonable. By refining our reward and punishment mechanisms, we hope to create a more effective system for verifying news and promoting accuracy.
