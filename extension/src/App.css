@@ -35,3 +35,31 @@
     transform: rotate(360deg);
   }
 }
+
+.circular-square {
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.status-color-fact {
+  color: #047857;
+}
+
+.status-color-fake {
+  color: #aa2f2f;
+}
+
+.status-color-voting {
+  color: #ebbe52;
+}
