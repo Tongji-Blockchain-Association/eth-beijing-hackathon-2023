@@ -5,10 +5,9 @@ import Answer from "../components/Answer";
 import News from "../components/News";
 import Top from "../components/Top";
 import NewsScore from "../components/NewsScore";
-import BottomInfo from "../components/BottomInfo";
 import ConnectButton from "../components/ConnectButton";
 import ToggleButton from "../components/ToggleButton";
-import TableRow from "../components/TableRow";
+import BottomLink from "../components/BottomLink";
 
 function ReaderPage() {
   return (
@@ -17,6 +16,7 @@ function ReaderPage() {
         <ConnectButton />
         <ToggleButton />
       </div>
+      <BottomLink />
       <Top />
       {/* <Top />
       <div className={styles.splitContainer}>
