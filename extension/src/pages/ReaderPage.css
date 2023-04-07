@@ -1,12 +1,19 @@
 #container {
   height: auto;
   min-height: 100px;
-  width: 364px;
+  width: 392px;
   background: #1c1c1e;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 5px;
   padding-bottom: 5px;
+
+  z-index: 1;
+  pointer-events: auto;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .container-control {

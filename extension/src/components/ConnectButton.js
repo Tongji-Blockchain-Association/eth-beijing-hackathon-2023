@@ -48,10 +48,12 @@ const ConnectButton = () => {
 
   return (
     <button
-      className="connect-button"
+      className={ isAuthenticated ? "connect-button" : "connect-button connect-red"}
       onClick={isAuthenticated ? disconnectWallet : connectWallet}
     >
-      <div className="connect-icon">{shape_tick}</div>
+      <div className="connect-icon">
+        {isAuthenticated ? shape_tick : shape_cross}
+      </div>
       <div>
         <p className="connect-label">
           {isAuthenticated ? "Connected" : "Connect Wallet"}

@@ -7,10 +7,14 @@
   justify-content: center;
   width: 172px;
   height: 33px;
-  
+
   margin-top: 0px;
   border-radius: 4px;
   border: 0px;
+}
+
+.connect-red {
+  background-color: #95243f;
 }
 
 .connect-button:hover {

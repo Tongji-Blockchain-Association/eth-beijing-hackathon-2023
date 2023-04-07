@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./StatusCard.css";
 
+import fact_image from "../images/fact.png";
+import voting_image from "../images/voting.png";
+import fake_image from "../images/fake.png";
+
 const StatusCard = ({ status = "voting", X = 124, Y = 37 }) => {
   let icon_path = {
-    voting: "/content/voting.png",
-    fact: "/content/fact.png",
-    fake: "/content/fake.png",
+    voting: voting_image,
+    fact: fact_image,
+    fake: fake_image,
   };
 
   let status_text = {

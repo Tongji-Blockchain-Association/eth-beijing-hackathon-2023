@@ -16,7 +16,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["/static/css/content.css", "/static/media/*"],
+      "resources": ["/static/css/content.css", "/static/media/*", "/content/*"],
       "matches": ["<all_urls>"]
     }
   ]

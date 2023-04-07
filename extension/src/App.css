@@ -63,3 +63,7 @@
 .status-color-voting {
   color: #ebbe52;
 }
+
+body {
+  background: none transparent;
+}
