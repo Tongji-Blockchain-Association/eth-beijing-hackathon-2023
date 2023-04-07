@@ -28,12 +28,6 @@ const Header = () => {
         <p className="header-text header-text-white">FACT</p>
         <p className="header-text">LENS</p>
       </div>
-
-      {/* <img
-        className="header-logo"
-        src={"/content/logo.png"}
-        alt={""}
-      /> */}
       <div className="header-cross">{shape_cross}</div>
     </div>
   );

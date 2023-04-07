@@ -1,8 +1,6 @@
 import React from "react";
 
 import "./ReaderPage.css";
-import Answer from "../components/Answer";
-import News from "../components/StatusCard";
 import Header from "../components/Header";
 import StatusCard from "../components/StatusCard";
 import MediaCard from "../components/MediaCard";
