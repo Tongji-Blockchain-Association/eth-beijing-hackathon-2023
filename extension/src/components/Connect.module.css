@@ -1,0 +1,41 @@
+.connect {
+    background-color: #047857;
+    border-radius: 4px;
+    padding: 5.5px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.leftIcon {
+    margin-right: 4px;
+    padding: 5px 2.5px 4.17px;
+    display: flex;
+    align-items: center;
+    width: 15px;
+}
+
+.shape {
+    flex: 1;
+    align-self: stretch;
+    object-fit: cover;
+}
+
+.layout {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+}
+
+.label {
+    color: #fff;
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 16px;
+}

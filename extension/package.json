@@ -97,7 +97,6 @@
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.4.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "^4.0.2",
@@ -122,10 +121,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "^2.2.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
