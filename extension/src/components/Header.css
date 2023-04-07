@@ -1,0 +1,41 @@
+.header-container {
+  height: 20px;
+  justify-content: space-between;
+
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  height: 17px;
+
+  font-family: ".SF Compact Rounded";
+  font-style: normal;
+  font-weight: 824;
+  font-size: 15px;
+  line-height: 18px;
+
+  /* Success/Green 700 */
+
+  color: #047857;
+
+  letter-spacing: 2px;
+}
+
+.header-text-white {
+  margin-right: 4px;
+  font-weight: 794;
+  color: #ffffff;
+}
+
+.header-logo {
+  height: 17px;
+}
+
+.header-cross {
+  margin-right: 4px;
+}
+
+.header-cross:hover {
+  cursor: pointer;
+}

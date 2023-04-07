@@ -3,9 +3,9 @@ import React from "react";
 import "./ReaderPage.css";
 import Answer from "../components/Answer";
 import News from "../components/StatusCard";
-import Top from "../components/Top";
+import Header from "../components/Header";
 import StatusCard from "../components/StatusCard";
-import MediaCard from "../components/MediaCard"
+import MediaCard from "../components/MediaCard";
 import ConnectButton from "../components/ConnectButton";
 import ToggleButton from "../components/ToggleButton";
 import BottomLink from "../components/BottomLink";
@@ -13,6 +13,7 @@ import BottomLink from "../components/BottomLink";
 function ReaderPage() {
   return (
     <div id="container">
+      <Header />
       <div className="container-control">
         <ConnectButton />
         <ToggleButton />
@@ -22,7 +23,6 @@ function ReaderPage() {
         <MediaCard />
       </div>
       <BottomLink />
-      <Top />
       {/* <Top />
       <div className={styles.splitContainer}>
         <Connect />
