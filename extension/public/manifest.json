@@ -1,12 +1,13 @@
 {
-  "short_name": "My Extension",
-  "name": "My Extension",
-  "version": "1.1",
+  "short_name": "FactLens",
+  "name": "FactLens",
+  "version": "1.2",
   "manifest_version": 3,
   "background": {
     "service_worker": "app/background.js"
   },
   "action": {},
+  "icons": { "16": "logo.png", "48": "logo.png", "128": "logo.png" },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
