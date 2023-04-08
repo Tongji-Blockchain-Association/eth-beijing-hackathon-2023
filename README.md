@@ -1,4 +1,6 @@
-# FactLENS-A Decentralized News Validation Ecosystem
+# FactLENS -A Decentralized News Validation Ecosystem
+
+![image](https://github.com/Tongji-Blockchain-Association/eth-beijing-hackathon-2023/blob/main/asset/image.png?raw=true)
 
 # 1. Intruduction
 
