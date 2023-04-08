@@ -8,7 +8,8 @@ const ToggleButton = ({ isValidator, setIsValidator, disabled }) => {
     <div className="toggle-container">
       <div className="toggle-text">Validator Mode</div>
       <Toggle
-        defaultChecked={isValidator}
+        // defaultChecked={isValidator}
+        checked={isValidator}
         onChange={() => {
           setIsValidator(!isValidator);
         }}

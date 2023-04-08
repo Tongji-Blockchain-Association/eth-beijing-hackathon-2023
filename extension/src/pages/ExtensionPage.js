@@ -57,7 +57,7 @@ function ExtensionPage({ isExt }) {
           active={active}
         />
       </div>
-      <SubmitButtons />
+      <SubmitButtons setIsValidator={setIsValidator} />
     </>
   );
 
