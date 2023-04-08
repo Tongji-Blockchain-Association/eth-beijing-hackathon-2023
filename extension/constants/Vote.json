@@ -1,0 +1,510 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			},
+			{
+				"internalType": "string[]",
+				"name": "domain",
+				"type": "string[]"
+			}
+		],
+		"name": "createNewsDomain",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string[]",
+				"name": "domain",
+				"type": "string[]"
+			}
+		],
+		"name": "createValidatorsDomain",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			},
+			{
+				"internalType": "string[]",
+				"name": "domain",
+				"type": "string[]"
+			},
+			{
+				"internalType": "string",
+				"name": "publisherName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "locate",
+				"type": "string"
+			}
+		],
+		"name": "initNews",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string[]",
+				"name": "_allPublishers",
+				"type": "string[]"
+			}
+		],
+		"name": "initPublishers",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "locate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_picture",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			}
+		],
+		"name": "initValidators",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			}
+		],
+		"name": "respond",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "sortPublishers",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			}
+		],
+		"name": "suttle",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "judge",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "reason",
+				"type": "string"
+			}
+		],
+		"name": "vote",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "allPublishers",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			}
+		],
+		"name": "calculateWeight",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "weight",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "description",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsURL",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "validator",
+				"type": "address"
+			}
+		],
+		"name": "encoding",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "code",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			}
+		],
+		"name": "getNews",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "_rightNumber",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "_wrongNumber",
+				"type": "int256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_rightVoters",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "_wrongVoters",
+				"type": "address[]"
+			},
+			{
+				"internalType": "int256",
+				"name": "_state",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "_publisher",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "publisherName",
+				"type": "string"
+			}
+		],
+		"name": "getNewsOfPublishers",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "_news",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "validator",
+				"type": "address"
+			}
+		],
+		"name": "getNewsOfPublishers",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "_votingURL_true",
+				"type": "string[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_votingURL_false",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newsUrl",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "validator",
+				"type": "address"
+			}
+		],
+		"name": "getReason",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "reason",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "validator",
+				"type": "address"
+			}
+		],
+		"name": "getValidatorInfo",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "_creditScore",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "_locate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_picture",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "newsDomain",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "newsPublisher",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "rank",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "authorScore",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "URLtoNews",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "rightNumber",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "wrongNumber",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "state",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "publisher",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "locate",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "validators",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "creditScore",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "locate",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "picture",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
