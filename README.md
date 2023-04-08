@@ -2,6 +2,8 @@
 
 ![image](https://github.com/Tongji-Blockchain-Association/eth-beijing-hackathon-2023/blob/main/asset/image.png?raw=true)
 
+
+Slide link: https://docs.google.com/presentation/d/1yf71O0O2Vv7JJTbE85SyTkCaA3YaeqE64XO0Vl77-IY/edit#slide=id.g22bbb470d9f_1_419
 # 1. Intruduction
 
 With the development of the Internet and social media, news is spreading at an unprecedented speed and scale. In such a context, fake news spreads rapidly, even its spread on social media exceeds the speed of real news, so how to solve the negative impact of fake news becomes an inevitable topic.
