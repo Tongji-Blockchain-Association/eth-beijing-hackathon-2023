@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./FakeButton.module.css";
+import "./FakeButton.css";
 
-const FakeButton = ({ label = "FAKE" }) => {
+const FakeButton = ({ active = true, selectFact }) => {
   return (
-    <div className={styles.fakeButton}>
-      <div className={styles.layout}>
-        <p className={styles.label}>{label}</p>
+    <div className="fakebutton-button fakebutton-button-select">
+      <div className="fakebutton-layout">
+        <p className="fakebutton-label">FAKE</p>
       </div>
     </div>
   );

@@ -1,0 +1,35 @@
+.factbutton-button {
+  width: 179px;
+  border-radius: 4px;
+  padding: 1.5px 28px 4.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.factbutton-button:hover {
+  cursor: pointer;
+}
+
+.factbutton-button-select {
+  background-color: #047857;
+}
+
+.factbutton-button-deselect {
+  background-color: #817d7e;
+}
+
+.factbutton-layout {
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.factbutton-label {
+  color: #fff;
+  font-family: ".SF Compact Rounded";
+  font-weight: 600;
+  font-size: 40px;
+}

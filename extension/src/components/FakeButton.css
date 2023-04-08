@@ -1,0 +1,34 @@
+.fakebutton-button {
+  width: 179px;
+  border-radius: 4px;
+  padding: 1.5px 28px 4.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fakebutton-button:hover {
+  cursor: pointer;
+}
+
+.fakebutton-button-select {
+  background-color: #95243f;
+}
+
+.fakebutton-button-deselect {
+  background-color: #817d7e;
+}
+
+.fakebutton-layout {
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fakebutton-label {
+  color: #fff;
+  font-family: ".SF Compact Rounded";
+  font-weight: 600;
+  font-size: 40px;
+}

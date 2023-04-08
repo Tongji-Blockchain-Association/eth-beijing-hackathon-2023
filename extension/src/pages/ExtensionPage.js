@@ -10,8 +10,11 @@ import BottomLink from "../components/BottomLink";
 import FloatingIcon from "./FloatingIcon";
 import CommentBox from "../components/CommentBox";
 
+import FactButton from "../components/FactButton";
+import FakeButton from "../components/FakeButton";
+
 function ExtensionPage({ isExt }) {
-  const [isValidator, setIsValidator] = React.useState(false);
+  const [isValidator, setIsValidator] = React.useState(true);
   const [expand, setExpand] = React.useState(true);
   const [status, setStatus] = React.useState("fact");
 
@@ -29,7 +32,14 @@ function ExtensionPage({ isExt }) {
     </>
   );
 
-  const ValidatorPart = "";
+  const ValidatorPart = (
+    <>
+      <div className="container-status factlens-row">
+        <FactButton />
+        <FakeButton />
+      </div>
+    </>
+  );
 
   const DetailPage = (
     <div id="container">
