@@ -7,7 +7,7 @@ import fake_image from "../images/fake.png";
 import voting_image from "../images/vote.png";
 
 const FloatingIcon = ({ status, setExpand, isExt }) => {
-  console.log(isExt);
+//   console.log(isExt);
 //   console.log(chrome.runtime.getURL("static/media/fact.png"));
   let icon_path = {
     voting: isExt

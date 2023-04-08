@@ -13,7 +13,7 @@ import CommentBox from "../components/CommentBox";
 function ExtensionPage({ isExt }) {
   const [isValidator, setIsValidator] = React.useState(false);
   const [expand, setExpand] = React.useState(true);
-  const [status, setStatus] = React.useState("voting");
+  const [status, setStatus] = React.useState("fact");
 
   const Icon = (
     <FloatingIcon status={status} setExpand={setExpand} isExt={isExt} />
@@ -25,7 +25,7 @@ function ExtensionPage({ isExt }) {
         <StatusCard status={status} isExt={isExt} />
         <MediaCard />
       </div>
-      <CommentBox />
+      {status == "voting" ? "" : <CommentBox isExt={isExt} />}
     </>
   );
 
