@@ -1,7 +1,7 @@
 import React from "react";
 import "./SubmitButtons.css";
 
-const SubmitButtons = ({ setIsValidator }) => {
+const SubmitButtons = ({ setIsValidator, setSelectFake, setSelectFact }) => {
   let shape_tick = (
     <svg
       width="24"
@@ -27,6 +27,8 @@ const SubmitButtons = ({ setIsValidator }) => {
       className={"submit-button"}
       onClick={() => {
         setIsValidator(false);
+        setSelectFake(false);
+        setSelectFact(false);
       }}
     >
       <div className="submit-icon">{shape_tick}</div>
@@ -41,6 +43,8 @@ const SubmitButtons = ({ setIsValidator }) => {
       className={"cancel-button"}
       onClick={() => {
         setIsValidator(false);
+        setSelectFake(false);
+        setSelectFact(false);
       }}
     >
       <div>

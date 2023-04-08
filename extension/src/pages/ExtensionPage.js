@@ -21,8 +21,8 @@ function ExtensionPage({ isExt }) {
   const [status, setStatus] = React.useState("voting");
 
   const [voted, setVoted] = React.useState(false);
-  const [selectFake, setSelectFake] = React.useState(true);
-  const [selectFact, setSelectFact] = React.useState(true);
+  const [selectFake, setSelectFake] = React.useState(false);
+  const [selectFact, setSelectFact] = React.useState(false);
 
   const Icon = (
     <FloatingIcon status={status} setExpand={setExpand} isExt={isExt} />
@@ -57,7 +57,11 @@ function ExtensionPage({ isExt }) {
           active={active}
         />
       </div>
-      <SubmitButtons setIsValidator={setIsValidator} />
+      <SubmitButtons
+        setIsValidator={setIsValidator}
+        setSelectFake={setSelectFake}
+        setSelectFact={setSelectFact}
+      />
     </>
   );
 
