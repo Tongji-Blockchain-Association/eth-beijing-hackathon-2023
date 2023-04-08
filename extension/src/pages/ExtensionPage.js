@@ -14,9 +14,14 @@ import FactButton from "../components/FactButton";
 import FakeButton from "../components/FakeButton";
 
 function ExtensionPage({ isExt }) {
-  const [isValidator, setIsValidator] = React.useState(true);
+  const [isValidator, setIsValidator] = React.useState(false);
   const [expand, setExpand] = React.useState(true);
-  const [status, setStatus] = React.useState("fact");
+//   const [status, setStatus] = React.useState("fact");
+  const [status, setStatus] = React.useState("voting");
+
+  const [voted, setVoted] = React.useState(false);
+  const [selectFake, setSelectFake] = React.useState(true);
+  const [selectFact, setSelectFact] = React.useState(true);
 
   const Icon = (
     <FloatingIcon status={status} setExpand={setExpand} isExt={isExt} />
@@ -32,11 +37,24 @@ function ExtensionPage({ isExt }) {
     </>
   );
 
+  let active = !voted;
   const ValidatorPart = (
     <>
       <div className="container-status factlens-row">
-        <FactButton />
-        <FakeButton />
+        <FactButton
+          selectFake={selectFake}
+          selectFact={selectFact}
+          setSelectFake={setSelectFake}
+          setSelectFact={setSelectFact}
+          active={active}
+        />
+        <FakeButton
+          selectFake={selectFake}
+          selectFact={selectFact}
+          setSelectFake={setSelectFake}
+          setSelectFact={setSelectFact}
+          active={active}
+        />
       </div>
     </>
   );
@@ -49,9 +67,10 @@ function ExtensionPage({ isExt }) {
         <ToggleButton
           isValidator={isValidator}
           setIsValidator={setIsValidator}
+          disabled={status != "voting"}
         />
       </div>
-      {isValidator ? ValidatorPart : ReaderPart}
+      {isValidator && status == "voting" ? ValidatorPart : ReaderPart}
       <BottomLink />
     </div>
   );
