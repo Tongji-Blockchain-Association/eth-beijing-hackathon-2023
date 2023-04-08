@@ -1,0 +1,86 @@
+.submit-button-group {
+  width: 364px;
+  height: 44px;
+
+  margin-top: 18px;
+  justify-content: space-evenly;
+}
+
+.submit-button {
+  background-color: #047857;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px;
+  gap: 4px;
+
+  width: 200px;
+  height: 44px;
+
+  margin-top: 0px;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+.submit-icon {
+  width: 20px;
+  height: 24px;
+}
+
+.submit-label {
+  width: 70px;
+  height: 20px;
+
+  font-family: ".SF Compact Rounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+
+  /* Shades/White */
+
+  color: #ffffff;
+}
+
+.cancel-button {
+  background-color: #e7eaee;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+
+  width: 102px;
+  height: 44px;
+
+  margin-top: 0px;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.cancel-button:hover {
+  cursor: pointer;
+}
+
+.cancel-label {
+  width: 50px;
+  height: 20px;
+
+  font-family: ".SF Compact Rounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  /* Neutral / 500 */
+
+  color: #64748b;
+}

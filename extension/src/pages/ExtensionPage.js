@@ -12,11 +12,12 @@ import CommentBox from "../components/CommentBox";
 
 import FactButton from "../components/FactButton";
 import FakeButton from "../components/FakeButton";
+import SubmitButtons from "../components/SubmitButtons";
 
 function ExtensionPage({ isExt }) {
-  const [isValidator, setIsValidator] = React.useState(false);
+  const [isValidator, setIsValidator] = React.useState(true);
   const [expand, setExpand] = React.useState(true);
-//   const [status, setStatus] = React.useState("fact");
+  //   const [status, setStatus] = React.useState("fact");
   const [status, setStatus] = React.useState("voting");
 
   const [voted, setVoted] = React.useState(false);
@@ -56,6 +57,7 @@ function ExtensionPage({ isExt }) {
           active={active}
         />
       </div>
+      <SubmitButtons />
     </>
   );
 
