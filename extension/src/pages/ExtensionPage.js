@@ -15,10 +15,11 @@ import FakeButton from "../components/FakeButton";
 import SubmitButtons from "../components/SubmitButtons";
 
 function ExtensionPage({ isExt }) {
-  const [isValidator, setIsValidator] = React.useState(true);
-  const [expand, setExpand] = React.useState(true);
-  //   const [status, setStatus] = React.useState("fact");
-  const [status, setStatus] = React.useState("voting");
+  const [isValidator, setIsValidator] = React.useState(false);
+  const [expand, setExpand] = React.useState(false);
+//   const [status, setStatus] = React.useState("fact");
+const [status, setStatus] = React.useState("fake");
+    // const [status, setStatus] = React.useState("voting");
 
   const [voted, setVoted] = React.useState(false);
   const [selectFake, setSelectFake] = React.useState(false);
