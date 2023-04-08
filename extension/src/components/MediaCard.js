@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./MediaCard.css";
+import "./MediaCard.css";
 
 let capitalizeFirstLetter = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);

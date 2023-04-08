@@ -1,5 +1,6 @@
 import React from "react";
 import "./SubmitButtons.css";
+import EvidenceBox from "./EvidenceBox";
 
 const SubmitButtons = ({ setIsValidator, setSelectFake, setSelectFact }) => {
   let shape_tick = (
@@ -54,10 +55,13 @@ const SubmitButtons = ({ setIsValidator, setSelectFake, setSelectFact }) => {
   );
 
   return (
-    <div className="submit-button-group factlens-row">
-      {CancelButton}
-      {SubmitButton}
-    </div>
+    <>
+      <EvidenceBox />
+      <div className="submit-button-group factlens-row">
+        {CancelButton}
+        {SubmitButton}
+      </div>
+    </>
   );
 };
 
