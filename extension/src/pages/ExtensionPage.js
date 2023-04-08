@@ -8,10 +8,11 @@ import ConnectButton from "../components/ConnectButton";
 import ToggleButton from "../components/ToggleButton";
 import BottomLink from "../components/BottomLink";
 import FloatingIcon from "./FloatingIcon";
+import CommentBox from "../components/CommentBox";
 
 function ExtensionPage({ isExt }) {
   const [isValidator, setIsValidator] = React.useState(false);
-  const [expand, setExpand] = React.useState(false);
+  const [expand, setExpand] = React.useState(true);
   const [status, setStatus] = React.useState("voting");
 
   const Icon = (
@@ -19,10 +20,13 @@ function ExtensionPage({ isExt }) {
   );
 
   const ReaderPart = (
-    <div className="container-status factlens-row">
-      <StatusCard status={status} isExt={isExt} />
-      <MediaCard />
-    </div>
+    <>
+      <div className="container-status factlens-row">
+        <StatusCard status={status} isExt={isExt} />
+        <MediaCard />
+      </div>
+      <CommentBox />
+    </>
   );
 
   const ValidatorPart = "";

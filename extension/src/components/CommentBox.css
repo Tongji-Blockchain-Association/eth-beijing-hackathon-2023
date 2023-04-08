@@ -1,0 +1,15 @@
+.comment-frame {
+  box-sizing: border-box;
+
+  width: 364px;
+  height: 189px;
+
+  background: #25272a;
+  border: 1px solid #747b8d;
+  border-radius: 5px;
+
+  padding: 5px;
+
+  margin-top: 10px;
+  /* margin-left: 10px; */
+}
